@@ -4,6 +4,7 @@ a{text-decoration: none; color: rgb(1, 1, 1);}
 div{color: rgb(0, 0, 0);}
 /* 기본 세팅 */
 /* #top */
+    
     #wrap{width: 100%;  }
     #top{width: 100%;height: 130px; background-color: rgb(240, 247, 255);
     position: fixed;top: 0; left: 0;}
@@ -85,6 +86,8 @@ position: absolute;right: 800px;color: rgb(243, 142, 0);; margin-right: 5%; }
 .design ul li{width: 100%;margin-top: 50px;}
 .design img{width: 100%;margin-top: 100px;transition: all 0.45s;}
 .design li:hover>img{transform: scale(1.2);}
+.design li a:hover>img{transform: scale(1.2);}
+
 /* 코딩 */
 .co{width: 1200px;  margin: auto; }
 .co span{font-weight: 600;font-size: 40px;margin-top: 50px;

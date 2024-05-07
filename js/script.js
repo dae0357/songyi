@@ -16,5 +16,11 @@ $('#top ul li a').click(function(){
         $("html, body").animate({
             scrollTop : loca
         }, "slow");
+
+
    
 });
+
+function showpop(){
+    $('.pop').show();
+}

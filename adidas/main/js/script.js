@@ -5,7 +5,6 @@ $(document).ready(function(){
    $('.p>a>.icon,#drop_box').click(function(){
     $('#drop_box').stop().slideToggle(600);
    });
-});
 
 setInterval(function(){
     $('.slide').animate({
@@ -16,6 +15,20 @@ setInterval(function(){
         return false;
     })
 },3000);
+
+$(window).scroll(function(){
+    let ws = $(window).scrollTop();
+    if(ws>200){
+       $('.box>.slide').hide();
+    }else{
+       $('.box>.slide').show();
+
+    }
+});
+
+});
+
+
 
 
 

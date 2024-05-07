@@ -1,0 +1,114 @@
+*{margin: 0; padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: rgb(1, 1, 1);}
+div{color: rgb(0, 0, 0);}
+/* 기본 세팅 */
+/* #top */
+    #wrap{width: 100%;  }
+    #top{width: 100%;height: 130px; background-color: rgb(240, 247, 255);
+    position: fixed;top: 0; left: 0;}
+    .box{width: 1300px; height: 130px;display: flex;margin: auto;}
+    .logo{width: 70px; height: 130px; margin: 30px 30px;}
+    .logo a{display: inline-block;}
+    .logo a img{width: 100%;border-radius: 50%; }
+    #top ul{
+        display: flex;justify-content: space-between; align-items: end;
+        width: 80%;height: 80px; ;margin: auto; }
+    #top ul li{width: 100%;margin-left: 55px;}
+    #top ul li a{font-weight: 600;font-size: 18px;width: 100px;height: 30px;display: inline-block;
+    text-align: center;padding: 0 15px;}
+    #top ul li:hover>a{
+      border-right: 1px solid rgb(0, 0, 0);
+        color: rgb(243, 142, 0); ;}
+/*home  */
+    #home{width: 800px; height: 980px;  margin:auto; margin-top: 70px;
+    text-align: center;padding-top: 30px;
+    }
+   .hi{font-weight: 600; font-size: 20px;    
+     height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}   
+   .hi:first-child{font-weight: 600; font-size: 25px; margin-top: 220px;margin-bottom: 20px;}  
+   .hi span{width: 50px; animation: move 0.8s infinite;font-size: 30px; margin-top: 28px;} 
+ 
+   @keyframes move {
+    0% {
+        margin-left: 0;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        margin-left: 0;
+    }
+   }
+/*  about*/ 
+   #me .i div{position: absolute;right:780px; font-size: 40px; font-weight: 600;
+ color: rgb(243, 142, 0); margin-right: 4%; margin-top: -20px;}
+  #me{width: 100%; height: 980px;background-color: rgb(240, 247, 255);}
+  .i{width: 1300px; height: 500px; margin: auto; padding-top: 300px; }
+  #me ul{display:  flex; justify-content: space-around;width: 100%;height: 100%;
+    align-items: center; margin-top: 10px; }
+    #me ul li .icon{display: block; font-size: 60px; text-align: center;
+    margin: 10px; color:rgb(62, 147, 244);margin-bottom: 40px;}
+    #me .i ul li{font-weight: 600;font-size: 18px;}
+    #me span{color: green;font-size: 20px;}
+  
+    #me ul li:nth-child(2){margin-top: -150px;margin-right: 50px;}
+    #me ul li:nth-child(3){margin-top: -130px;margin-right: 100px;text-align: center;}
+    #me ul p{text-align: center;}
+/* SKILL */
+#skill{width: 100%;height: 980px;}
+#skill .skill{width: 1300px;height: 100%;margin: auto; margin-top: 40px;
+    padding-top: 300px;}
+#skill .skill p{font-weight: 600; font-size: 40px;margin: auto;display: block;width: 170px;
+    color: rgb(243, 142, 0);margin-left: 45%; }
+#skill .skill ul{display: flex; justify-content: space-around; margin-top: 70px; font-weight: 600;}
+#skill .skill ul li div{background-color: rgb(227, 228, 228);width: 100px;height: 20px;margin-top: 10px;}
+#skill .skill ul li div>div{background-color:rgb(62, 147, 244);width: 80px;height: 20px;}
+#skill .skill ul li .pigma{background-color: rgb(227, 228, 228);width: 100px;height: 20px;margin-top: 10px;}
+#skill .skill ul li .pigma>div{background-color:rgb(62, 147, 244);;width: 90px;height: 20px;}
+#skill .skill ul li .j{background-color: rgb(227, 228, 228);width: 100px;height: 20px;margin-top: 10px;}
+#skill .skill ul li .j>div{background-color: rgb(62, 147, 244);;width: 40px;height: 20px;}
+#skill .skill ul li .us{background-color: rgb(227, 228, 228);width: 100px;height: 20px;margin-top: 10px;}
+#skill .skill ul li .us>div{background-color: rgb(62, 147, 244);;width: 60px;height: 20px;}
+#skill .skill ul li .po{background-color: rgb(227, 228, 228);width: 100px;height: 20px;margin-top: 10px;}
+#skill .skill ul li .po>div{background-color: rgb(62, 147, 244);;width: 70px;height: 20px;}
+
+/* 디자인 */
+#pofol{width: 100%;height: 1750px;padding-top: 200px;}
+.design{width: 1200px;  margin: auto;}
+.design span{font-weight: 600;font-size: 40px;
+position: absolute;right: 800px;color: rgb(243, 142, 0);; margin-right: 5%; }
+.design ul{width: 900px;display: flex;justify-content: space-around;margin: auto;}
+.design ul li{width: 100%;margin-top: 50px;}
+.design img{width: 100%;margin-top: 100px;transition: all 0.45s;}
+.design li:hover>img{transform: scale(1.2);}
+/* 코딩 */
+.co{width: 1200px;  margin: auto; }
+.co span{font-weight: 600;font-size: 40px;margin-top: 50px;
+position: absolute;right: 800px;color: rgb(243, 142, 0);; margin-right: 3%;}
+.co ul{width: 900px;display: flex;justify-content: space-around;margin: auto;margin-top: 50px;}
+.co ul li{width: 100%;margin-top:100px ; }
+.co img{width:calc(100% / 1);margin-top: 100px;transition: all 0.45s;border-radius: 10%;}
+.co li a:hover>img{transform: scale(1.2);}
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+footer{width: 100%;height: 100px;background-color: rgb(93, 121, 153);}
+.foot{width: 1300px; height: 100%; margin: auto; display: flex;justify-content: center;align-items: center;
+font-size: 12px;text-align: center; color: rgb(255, 255, 255);}
